@@ -15,6 +15,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
+import '../landing/Landing.css';
 
 const tiers = [
   {
