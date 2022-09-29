@@ -41,8 +41,11 @@ export default function App() {
           <Route path="/signinTeacher" element={<SigninTeacher />} />
           <Route path="/signinStudent" element={<SigninStudent />} />
           <Route path="/homeStudentPage" element={<homeStudentPage />} />
+          <Route path="/homeTeacherPage" element={<homeTeacherPage />} />
+
         </Routes>
       </div>
     </Router>
+    
   );
 }
