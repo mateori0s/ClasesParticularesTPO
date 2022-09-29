@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
-import { Input, ChakraProvider, Textarea } from '@chakra-ui/react'
-
-
+import React, { Component } from "react";
+import { Input, ChakraProvider, Textarea } from "@chakra-ui/react";
 
 export default class SigninTeacher extends Component {
   render() {
@@ -18,7 +16,11 @@ export default class SigninTeacher extends Component {
         </div>
         <div className="mb-3">
           <label>Apellido</label>
-          <input type="text" className="form-control" placeholder="Ingrese apellido" />
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Ingrese apellido"
+          />
         </div>
         <div className="mb-3">
           <label>Email</label>
@@ -39,13 +41,13 @@ export default class SigninTeacher extends Component {
         <div className="mb-3">
           <label>Titulo obtenido:</label>
           <ChakraProvider>
-            <Input variant='outline' />
-            </ChakraProvider>
-        </div>
-          <label>Experiencia Laboral</label>
-          <ChakraProvider>
-          <Textarea placeholder='Contanos acerca de tus experiencias laborales' />
+            <Input variant="outline" />
           </ChakraProvider>
+        </div>
+        <label>Experiencia Laboral</label>
+        <ChakraProvider>
+          <Textarea placeholder="Contanos acerca de tus experiencias laborales" />
+        </ChakraProvider>
 
         <div className="mb-3">
           <label>Contraseña</label>
@@ -61,10 +63,9 @@ export default class SigninTeacher extends Component {
           </button>
         </div>
         <p className="forgot-password text-right">
-           <a href="/sign-in">Ya tenes una cuenta?</a>
+          <a href="/sign-in">Ya tenes una cuenta?</a>
         </p>
-
       </form>
-    )
+    );
   }
 }
