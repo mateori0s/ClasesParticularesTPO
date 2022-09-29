@@ -15,7 +15,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
-import '../landing/Landing.css';
+import "../landing/Landing.css";
 
 const tiers = [
   {
@@ -68,51 +68,6 @@ export default function Landing() {
         styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
       />
       <CssBaseline />
-      <AppBar
-        position="static"
-        color="default"
-        elevation={0}
-        sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
-      >
-        <Toolbar sx={{ flexWrap: "wrap" }}>
-          <Typography variant="h5" color="text.primary">
-            SOLICITAR
-          </Typography>
-          <Typography variant="h6" color="text.secondary">
-            clases.com
-          </Typography>
-          {/* <Typography variant="h5" color="inherit" noWrap sx={{ flexGrow: 1 }}>
-          SOLICITARclases.com
-          </Typography> */}
-          <Typography
-            variant="h6"
-            color="inherit"
-            noWrap
-            sx={{ flexGrow: 1 }}
-          ></Typography>
-          <nav>
-            <Link
-              variant="button"
-              color="text.primary"
-              href="#"
-              sx={{ my: 1, mx: 1.5 }}
-            >
-              Caracteristicas
-            </Link>
-            <Link
-              variant="button"
-              color="text.primary"
-              href="#"
-              sx={{ my: 1, mx: 1.5 }}
-            >
-              Busqueda
-            </Link>
-          </nav>
-          <Button href="#" variant="outlined" sx={{ my: 1, mx: 1.5 }}>
-            Ingreso
-          </Button>
-        </Toolbar>
-      </AppBar>
       {/* Hero unit */}
       <Container
         disableGutters
