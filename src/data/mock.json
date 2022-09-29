@@ -1,0 +1,89 @@
+{
+    "clases": [
+      {
+        "id": 1,
+        "nombreClase": "Clases de Inglés",
+        "dias": "Lunes, Miercoles, Viernes",
+        "rating": 4,
+        "review":"1000",
+        "precio": "$6000",
+        "duracion": "68hs",
+        "cupos": "5",
+        "inscriptos":"25",
+        "name":"Profesor: Juan Hernandez"
+      },
+      {
+        "id": 2,
+        "nombreClase": "Clases de Español",
+        "dias": "Martes, Jueves, Sabados",
+        "rating":5,
+        "review":"400",
+        "precio": "$3000",
+        "duracion": "68hs",
+        "cupos": "15",
+        "inscriptos":"5",
+        "name":"Profesor: Juan Hernandez"
+      },
+      {
+        "id": 3,
+        "nombreClase": "Clases de Chino",
+        "dias": "Martes, Miercoles, Viernes",
+        "rating":3,
+        "review":"500",
+        "precio": "$5000",
+        "duracion": "68hs",
+        "cupos": "10",
+        "inscriptos":"15",
+        "name":"Profesor: Juan Hernandez"
+      },
+      {
+        "id": 4,
+        "nombreClase": "Clases de Chino",
+        "dias": "Martes, Miercoles, Viernes",
+        "rating":3,
+        "review":"500",
+        "precio": "$5000",
+        "duracion": "68hs",
+        "cupos": "10",
+        "inscriptos":"15",
+        "name":"Profesor: Juan Hernandez"
+      },
+      {
+        "id": 5,
+        "nombreClase": "Clases de Chino",
+        "dias": "Martes, Miercoles, Viernes",
+        "rating":3,
+        "review":"500",
+        "precio": "$5000",
+        "duracion": "68hs",
+        "cupos": "10",
+        "inscriptos":"15",
+        "name":"Profesor: Juan Hernandez"
+      },
+      {
+        "id": 6,
+        "nombreClase": "Clases de Chino",
+        "dias": "Martes, Miercoles, Viernes",
+        "rating":3,
+        "review":"500",
+        "precio": "$5000",
+        "duracion": "68hs",
+        "cupos": "10",
+        "inscriptos":"15",
+        "name":"Profesor: Juan Hernandez"
+      }
+    ],
+
+    "comentarios": [
+      {
+        "id":1,
+        "comentario":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      },
+      {
+        "id":2,
+        "comentario":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      }
+      
+
+    ]
+  }
