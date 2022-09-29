@@ -6,8 +6,7 @@ import SignUp from "./pages/signin/SigninPage";
 import Signin01 from "./pages/signin/Signin01";
 import SigninTeacher from "./pages/signin/SigninTeacher";
 import SigninStudent from "./pages/signin/SigninStudent";
-import Landing from "./pages/landing/Landing";
-import { ChakraProvider } from "@chakra-ui/react";
+// import Landing from "./pages/landing/Landing";
 
 export default function App() {
   return (
@@ -34,17 +33,15 @@ export default function App() {
             </div>
           </div>
         </nav>
-        <ChakraProvider>
-          <Routes>
-            <Route exact path="/" element={<Landing />} />
-            <Route path="/sign-up" element={<SignUp />} />
-            <Route path="/sign-in" element={<Login />} />
-            <Route path="/sign-in-inicial" element={<Signin01 />} />
-            <Route path="/signinTeacher" element={<SigninTeacher />} />
-            <Route path="/signinStudent" element={<SigninStudent />} />
-            <Route path="/homeStudentPage" element={<homeStudentPage />} />
-          </Routes>
-        </ChakraProvider>
+        <Routes>
+          <Route exact path="/" element={<Login />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/sign-in" element={<Login />} />
+          <Route path="/sign-in-inicial" element={<Signin01 />} />
+          <Route path="/signinTeacher" element={<SigninTeacher />} />
+          <Route path="/signinStudent" element={<SigninStudent />} />
+          <Route path="/homeStudentPage" element={<homeStudentPage />} />
+        </Routes>
       </div>
     </Router>
   );
