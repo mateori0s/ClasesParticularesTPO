@@ -7,6 +7,10 @@
     transition: 0.3s;
 }
 
+.imagen{
+    width: 100%;
+}
+
 .Principal{
     height: 400px;
     width: 400px;
