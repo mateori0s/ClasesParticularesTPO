@@ -1,6 +1,6 @@
 import React,{useContext} from "react";
 import {Image, Box, Square, Button, IconButton} from '@chakra-ui/react';
-import { StarIcon } from '@chakra-ui/icons';
+import { StarIcon,CheckIcon, CloseIcon } from '@chakra-ui/icons';
 import './BoxClass.css';
 import {ClaseContext} from "../../contexts/ClasesContext";
 import {useNavigate} from "react-router-dom";
@@ -81,16 +81,31 @@ export default function Caja({id, nombreClase, dias, rating, review, precio, dur
                         {review} reviews
                       </Box>
                       <Box as='span' ml='10' color='gray.600' fontSize='sm'>
-                      <IconButton
+                        <IconButton
+                            m="1"
+                            variant='outline'
+                            colorScheme='blue'
+                            aria-label='Send email'
+                            icon={<MdEdit />}
+                          />
+                        <IconButton
+                          m="1"
                           variant='outline'
-                          colorScheme='teal'
+                          colorScheme='green'
                           aria-label='Send email'
-                          icon={<MdEdit />}
+                          icon={<CheckIcon />}
+                        />
+                        <IconButton
+                          m="1"
+                          variant='outline'
+                          colorScheme='red'
+                          aria-label='Send email'
+                          icon={<CloseIcon />}
                         />
                       </Box> 
                     </Box>
-                    <Box as='span' ml='0' mt="0" color='green' fontSize='sm'>
-                      <Button colorScheme='red' rightIcon={<MdArrowForward />} variant='outline' onClick={redirect}>
+                    <Box as='span' fontSize='sm'>
+                      <Button mt="3" colorScheme='red' rightIcon={<MdArrowForward />} variant='outline' onClick={redirect}>
                         Comentarios
                       </Button>
                     </Box>
