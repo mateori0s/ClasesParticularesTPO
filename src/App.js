@@ -31,13 +31,18 @@ export default function App() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to={"/buscarclases"}>
-                      Buscar Clases
+                    <Link className="nav-link" to={"/crearclases"}>
+                      Crear Clases
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to={"/crearclases"}>
-                      Crear Clases
+                    <Link className="nav-link" to={"/sign-in"}>
+                      Iniciar Sesion
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to={"/sign-in-inicial"}>
+                      Registrate
                     </Link>
                   </li>
                   <li className="nav-item">
