@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Image, Box, Square, Button, IconButton } from "@chakra-ui/react";
-import { StarIcon } from "@chakra-ui/icons";
+import { StarIcon, CheckIcon, CloseIcon } from "@chakra-ui/icons";
 import "./BoxClass.css";
+import { ClaseContext } from "../../contexts/ClasesContext";
 import { useNavigate } from "react-router-dom";
 import { MdArrowForward, MdEdit } from "react-icons/md";
 
@@ -16,6 +17,7 @@ export default function Caja({
   cupos,
   inscriptos,
 }) {
+  const { clase } = useContext(ClaseContext);
   const navigate = useNavigate();
   const redirect = () => {
     const path = "/comentarios/";
@@ -36,7 +38,7 @@ export default function Caja({
       overflow="hidden"
       bg="white"
     >
-      <Image className="imagen" src={property.imagen} alt={id} />
+      <Image class="imagen" src={property.imagen} alt={id} />
       <Box>
         <Square>
           <Box display="flex" alignItems="center">
@@ -95,15 +97,31 @@ export default function Caja({
           </Box>
           <Box as="span" ml="10" color="gray.600" fontSize="sm">
             <IconButton
+              m="1"
               variant="outline"
-              colorScheme="teal"
+              colorScheme="blue"
               aria-label="Send email"
               icon={<MdEdit />}
             />
+            <IconButton
+              m="1"
+              variant="outline"
+              colorScheme="green"
+              aria-label="Send email"
+              icon={<CheckIcon />}
+            />
+            <IconButton
+              m="1"
+              variant="outline"
+              colorScheme="red"
+              aria-label="Send email"
+              icon={<CloseIcon />}
+            />
           </Box>
         </Box>
-        <Box as="span" ml="0" mt="0" color="green" fontSize="sm">
+        <Box as="span" fontSize="sm">
           <Button
+            mt="3"
             colorScheme="red"
             rightIcon={<MdArrowForward />}
             variant="outline"
