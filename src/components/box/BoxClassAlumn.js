@@ -48,7 +48,7 @@ export default function CajaAlumno({
       overflow="hidden"
       bg="white"
     >
-      <Image class="imagen" src={property.imagen} alt={id} />
+      <Image className="imagen" src={property.imagen} alt={id} />
       <Box>
         <Square>
           <Box display="flex" alignItems="center">

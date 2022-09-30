@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Box, Square, Button, IconButton } from "@chakra-ui/react";
-import { StarIcon, CheckIcon, CloseIcon } from "@chakra-ui/icons";
+import { StarIcon } from "@chakra-ui/icons";
 import "./BoxClass.css";
 import { useNavigate } from "react-router-dom";
 import { MdArrowForward, MdEdit } from "react-icons/md";
@@ -28,8 +28,15 @@ export default function Caja({
   };
 
   return (
-    <Box m={5} maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden">
-      <Image class="imagen" src={property.imagen} alt={id} />
+    <Box
+      m={5}
+      maxW="sm"
+      borderWidth="1px"
+      borderRadius="lg"
+      overflow="hidden"
+      bg="white"
+    >
+      <Image className="imagen" src={property.imagen} alt={id} />
       <Box>
         <Square>
           <Box display="flex" alignItems="center">
