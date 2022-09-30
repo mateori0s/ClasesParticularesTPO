@@ -11,6 +11,7 @@ import Coments from "./pages/Comentarios";
 import Clases from "./pages/Clases";
 import CajaCrearClases from "./pages/CrearClase";
 // import Landing from "./pages/landing/Landing";
+import olvidoContrasena from "./pages/olvidoContrasena/olvidoContrasena";
 
 export default function App() {
   return (
@@ -49,6 +50,8 @@ export default function App() {
           <Route path="/comentarios" element={<Coments />} />
           <Route path="/clases" element={<Clases />} />
           <Route path="/crearClase" element={<CajaCrearClases />} />
+          <Route path="/homeTeacherPage" element={<homeTeacherPage />} />
+          <Route path="/olvidoContrasena" element={<olvidoContrasena />} />
         </Routes>
       </div>
     </Router>
