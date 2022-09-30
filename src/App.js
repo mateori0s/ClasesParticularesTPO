@@ -7,6 +7,7 @@ import Signin01 from "./pages/signin/Signin01";
 import SigninTeacher from "./pages/signin/SigninTeacher";
 import SigninStudent from "./pages/signin/SigninStudent";
 import Landing from "./pages/landing/Landing";
+import olvidoContrasena from "./pages/olvidoContrasena/olvidoContrasena"
 
 export default function App() {
   return (
@@ -42,7 +43,8 @@ export default function App() {
           <Route path="/signinStudent" element={<SigninStudent />} />
           <Route path="/homeStudentPage" element={<homeStudentPage />} />
           <Route path="/homeTeacherPage" element={<homeTeacherPage />} />
-
+          <Route path="/olvidoContrasena" element={<olvidoContrasena/>} />
+          
         </Routes>
       </div>
     </Router>

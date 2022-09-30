@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
-import mock from "../data/mock.json";
+import mock from "../data/mockUsers.json";
 import { UserContext } from "../../contexts/UserContext";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../login/LoginPage.css";
 
 export default function LoginPage() {
@@ -45,9 +45,11 @@ export default function LoginPage() {
               </label>
             </div>
           </div>
+          <Link className="forgpass-link" to={"/olvidoContrasena"}>
           <p className="forgot-password text-right">
             Olvidaste tu contraseña?
           </p>
+          </Link>
           <div className="d-grid">
             <button className="btn btn-primary" onClick={() => {
               const user = mock.loginUsers.find(user => user.mail === email)
