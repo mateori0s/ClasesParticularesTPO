@@ -10,7 +10,7 @@ import ClasesAlumnos from "./pages/ClasesAlumnos";
 import Coments from "./pages/Comentarios";
 import Clases from "./pages/Clases";
 import CajaCrearClases from "./pages/CrearClase";
-import OlvidoContrasena from "./pages/olvidoContrasena/OlvidoContrasena";
+import OlvidoContrasena from "./pages/olvidoContrasena/olvidoContrasena";
 import Landing from "./pages/landing/Landing";
 
 export default function App() {
