@@ -10,9 +10,7 @@ export default function CrearClases() {
   return (
       <div className="auth-wrapper2">
         <div className="auth-inner2">
-          <form onSubmit={(event)=>{
-            event.preventDefault();
-          }}>
+          <form>
             <h3>Crear Clase</h3>
             <div className="mb-3">
               <label>Nombre de la materia</label>
@@ -25,9 +23,9 @@ export default function CrearClases() {
               />
             </div>
             <div className="mb-3">
-              <label>Duración</label>
+              <label>Duración(horas)</label>
               <input
-                type="time"
+                type="text"
                 className="form-control"
                 placeholder="Ingrese la duracion"
                 name= "nameDuration"
@@ -35,7 +33,7 @@ export default function CrearClases() {
               />
             </div>
             <div className="mb-3">
-              <label>Frecuencia</label>
+              <label>Frecuencia(Dias)</label>
               <input
                 type="text"
                 className="form-control"
@@ -47,7 +45,7 @@ export default function CrearClases() {
             <div className="mb-3">
               <label>Costo</label>
               <input
-                type="time"
+                type="text"
                 className="form-control"
                 placeholder="Ingrese el costo"
                 name= "nameCost"
@@ -73,9 +71,6 @@ export default function CrearClases() {
                 >
                   Crear clase
                 </Button>
-                {/* <button type="submit" className="btn btn-light">
-                  Crear clase
-                </button> */}
               </Box>
             </Box>
           </form>
