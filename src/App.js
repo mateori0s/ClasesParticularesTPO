@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./pages/login/LoginPage";
 import SignUp from "./pages/signin/SigninPage";
@@ -6,6 +7,9 @@ import Signin01 from "./pages/signin/Signin01";
 import SigninTeacher from "./pages/signin/SigninTeacher";
 import SigninStudent from "./pages/signin/SigninStudent";
 import ClasesAlumnos from "./pages/ClasesAlumnos";
+import Coments from "./pages/Comentarios";
+import Clases from "./pages/Clases";
+import CajaCrearClases from "./pages/CrearClase";
 // import Landing from "./pages/landing/Landing";
 
 export default function App() {
@@ -42,6 +46,9 @@ export default function App() {
           <Route path="/signinStudent" element={<SigninStudent />} />
           <Route path="/homeStudentPage" element={<homeStudentPage />} />
           <Route path="/clasesAlumnos" element={<ClasesAlumnos />} />
+          <Route path="/comentarios" element={<Coments />} />
+          <Route path="/clases" element={<Clases />} />
+          <Route path="/crearClase" element={<CajaCrearClases />} />
         </Routes>
       </div>
     </Router>

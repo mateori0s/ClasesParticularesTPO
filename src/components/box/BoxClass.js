@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Box, Square, Button, IconButton } from "@chakra-ui/react";
-import { StarIcon } from "@chakra-ui/icons";
+import { StarIcon, CheckIcon, CloseIcon } from "@chakra-ui/icons";
 import "./BoxClass.css";
 import { useNavigate } from "react-router-dom";
 import { MdArrowForward, MdEdit } from "react-icons/md";
