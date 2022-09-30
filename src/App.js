@@ -10,8 +10,9 @@ import ClasesAlumnos from "./pages/ClasesAlumnos";
 import Coments from "./pages/Comentarios";
 import Clases from "./pages/Clases";
 import CajaCrearClases from "./pages/CrearClase";
-import OlvidoContrasena from "./pages/olvidoContrasena/OlvidoContrasena";
+import OlvidoContrasena from "./pages/olvidoContrasena/olvidoContrasena";
 import Landing from "./pages/landing/Landing";
+import Contrataciones from "./pages/Contrataciones/Contrataciones";
 
 export default function App() {
   return (
@@ -68,6 +69,8 @@ export default function App() {
             <Route path="/comentarios" element={<Coments />} />
             <Route path="/clases" element={<Clases />} />
             <Route path="/crearClase" element={<CajaCrearClases />} />
+            <Route path="/contrataciones" element={<Contrataciones />} />
+
           </Routes>
         </main>
         <footer>
