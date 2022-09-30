@@ -74,7 +74,7 @@ export default class SigninStudent extends Component {
               </button>
             </div>
             <p className="forgot-password text-right">
-              <a href="/sign-in">Ya tenes una cuenta?</a>
+              <a href="/">Ya tenes una cuenta?</a>
             </p>
           </form>
         </div>

@@ -32,10 +32,15 @@ export default function App() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to={"/crearclases"}>
+                    <Link className="nav-link" to={"/crearClase"}>
                       Crear Clases
                     </Link>
                   </li>
+                  {/* <li className="nav-item">
+                    <Link className="nav-link" to={"/contrataciones"}>
+                      Contrataciones
+                    </Link>
+                  </li> */}
                   <li className="nav-item">
                     <Link className="nav-link" to={"/sign-in"}>
                       Iniciar Sesion
@@ -81,9 +86,9 @@ export default function App() {
                     <h2>Sobre Nosotros</h2>
                   </div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Morbi consectetur dui et commodo pretium. Praesent lacinia
-                    ipsum ac sapien interdum, sit amet facilisis diam placerat.
+                    Proyecto TPO para cursada
+                    <br />
+                    419443-2022-2C-NOCHE-VIE-API.
                   </p>
                 </div>
               </div>
@@ -105,7 +110,7 @@ export default function App() {
                       </Link>
                     </li>
                     <li>
-                      <Link className="nav-link" to={"/"}>
+                      <Link className="nav-link" to={"/contrataciones"}>
                         Contrataciones
                       </Link>
                     </li>
@@ -130,16 +135,18 @@ export default function App() {
                   </div>
                   <ul className="footer-list">
                     <li>
-                      Phone: <a href="/">010-020-0560</a>
+                      Whatsapp:{" "}
+                      <a href="https://walink.co/084fcd">Enviar mensaje</a>
                     </li>
                     <li>
-                      Email: <a href="/">x@company.com</a>
+                      Email:{" "}
+                      <a href="fdealesandro@uade.edu.ar">Enviar comentario</a>
                     </li>
                     <li>
-                      Support: <a href="/">x@company.com</a>
-                    </li>
-                    <li>
-                      Website: <a href="/">www.ClasesParticulares.com</a>
+                      Repositorio:{" "}
+                      <a href="https://github.com/419443-2022-2C-NOCHE-VIE-API/TPO">
+                        www.ClasesParticulares.com
+                      </a>
                     </li>
                   </ul>
                 </div>

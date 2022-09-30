@@ -33,8 +33,7 @@ npm run build
 
 #### Tecnologias involucradas 👨‍💻
 
-- [Vite](https://vitejs.dev) - Creacion de proyecto
 - [React](https://reactjs.org) - Framework FE
-- [Material-UI](https://material-ui.com/) - Componentes y estilos
+- [Chakra-UI](https://chakra-ui.com/) - Componentes y estilos
 - [NodeJS](https://nodejs.org/es/) - Motor BE
 - [MongoDB](https://www.mongodb.com/es) - Base de datos

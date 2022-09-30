@@ -1,28 +1,27 @@
-.banner {
+.banner-contrataciones {
 	background-color: #1C8EF9;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 300px 0px;
 	background-position: center center;
 }
-.banner .caption {
+.banner-contrataciones .caption {
 	text-align: center;
 }
-.banner .caption h2 {
+.banner-contrataciones .caption h1 {
 	text-transform:none;
 	letter-spacing: 1.5px;
-	margin-top: 0px;
-	margin-bottom: 50px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	font-weight: 700;
 	color: #fff;
 }
-.banner #search-section fieldset {
+.banner-contrataciones #search-section fieldset {
 	display: inline-block;
 }
-.banner #search-section {
+.banner-contrataciones #search-section {
 	position: relative;
 }
-.banner #search-section input.searchText {
+.banner-contrataciones #search-section input.searchText {
 	float: left;
 	width: 700px;
 	min-width: 280px;
@@ -36,7 +35,7 @@
 	letter-spacing: 0.5px;
 	margin-bottom: 30px;
 }
-.banner #search-section input.main-button {
+.banner-contrataciones #search-section input.main-button {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -57,7 +56,7 @@
 	transition: all 0.5s;
 	margin-bottom: 30px;
 }
-.banner #search-section button:hover {
+.banner-contrataciones #search-section button:hover {
 	background-color: #00a4b9;
 }
 #search-section ul {
