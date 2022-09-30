@@ -6,9 +6,6 @@ import { Link } from "react-router-dom";
 export default function ClasesAlumnos() {
   return (
     <Box className="clase">
-      <Button m={3}>
-        <Link to={"/clases"}>Volver</Link>
-      </Button>
       <SimpleGrid columns={{ sm: 1, md: 3 }} spacingX="40px" spacingY="20px">
         {mock.clases.map((clase) => (
           <CajaAlumno
