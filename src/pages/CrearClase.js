@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import { Input, ChakraProvider, Textarea } from "@chakra-ui/react";
 import "../pages/signin/SigninPage.css";
 
-export default class SigninTeacher extends Component {
-  render() {
-    return (
+export default function CrearClases() {
+  return (
       <div className="auth-wrapper">
         <div className="auth-inner">
           <form>
@@ -51,4 +50,3 @@ export default class SigninTeacher extends Component {
       </div>
     );
   }
-}

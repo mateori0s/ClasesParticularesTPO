@@ -1,9 +1,15 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
+import mock from "../data/mockUsers.json";
+import { UserContext } from "../../contexts/UserContext";
+import { useNavigate, Link } from "react-router-dom";
 
-export default class Login extends Component {
-  render() {
-    return (
+export default function LoginPage() {
+  const { setUser } = useContext(UserContext);
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+
+  return (
+    <div className="App">
       <div className="auth-wrapper">
         <div className="auth-inner">
           <form>
@@ -12,6 +18,9 @@ export default class Login extends Component {
               <label>Email</label>
               <input
                 type="email"
+                name="role"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
                 className="form-control"
                 placeholder="Ingrese su email"
               />
@@ -36,17 +45,36 @@ export default class Login extends Component {
                 </label>
               </div>
             </div>
+            <Link className="forgpass-link" to={"/olvidoContrasena"}>
+              <p className="forgot-password text-right">
+                Olvidaste tu contraseña?
+              </p>
+            </Link>
             <div className="d-grid">
-              <button type="submit" className="btn btn-primary">
-                <a href="/homeStudentPage"> Iniciar Sesion</a>
+              <button
+                className="btn btn-primary"
+                onClick={() => {
+                  const user = mock.loginUsers.find(
+                    (user) => user.mail === email
+                  );
+                  if (user) {
+                    setUser(user);
+                    navigate(
+                      user.role === "TEACHER"
+                        ? "/homeStudentPage"
+                        : "/homeTeacherPage"
+                    );
+                  } else {
+                    alert("Usuario no registrado");
+                  }
+                }}
+              >
+                Iniciar sesión
               </button>
             </div>
-            <p className="forgot-password text-right">
-              <Link to={"/"}>Olvidaste tu contraseña?</Link>
-            </p>
           </form>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }

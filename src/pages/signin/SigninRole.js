@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-export default class Signin01 extends Component {
+export default class SigninRole extends Component {
   render() {
     return (
       <div className="auth-wrapper">
