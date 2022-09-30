@@ -28,7 +28,12 @@ export default function App() {
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
                     <Link className="nav-link" to={"/clases"}>
-                      Mis Clases
+                      Mis Clases (P)
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link" to={"/clasesAlumnos"}>
+                      Mis Clases (A)
                     </Link>
                   </li>
                   <li className="nav-item">
