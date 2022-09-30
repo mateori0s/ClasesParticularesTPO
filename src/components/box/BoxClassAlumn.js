@@ -1,7 +1,6 @@
 import React,{useContext} from "react";
 import {Image, Box, Square, Button, ButtonGroup, Select, Input, useDisclosure} from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
-// import './BoxClassAlumn.css';
 import {ClaseContext} from "../../contexts/ClasesContext";
 import {useNavigate} from "react-router-dom";
 import {MdArrowForward, MdEdit} from "react-icons/md";
