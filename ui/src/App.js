@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Login from "./pages/login/LoginPage";
+import LoginPageBackend1 from "./pages/login/LoginPageBackend";
 import SignUp from "./pages/signin/SigninPage";
 import SigninRole from "./pages/signin/SigninRole";
 import SigninTeacher from "./pages/signin/SigninTeacher";
@@ -69,7 +69,7 @@ export default function App() {
         <main>
           <Routes>
             <Route exact path="/" element={<Landing />} />
-            <Route path="/sign-in" element={<Login />} />
+            <Route path="/sign-in" element={<LoginPageBackend1 />} />
             <Route path="/olvidoContrasena" element={<OlvidoContrasena />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/sign-in-inicial" element={<SigninRole />} />
