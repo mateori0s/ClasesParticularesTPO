@@ -53,21 +53,7 @@ export default function LoginPage() {
             <div className="d-grid">
               <button
                 className="btn btn-primary"
-                onClick={() => {
-                  const user = mock.loginUsers.find(
-                    (user) => user.mail === email
-                  );
-                  if (user) {
-                    setUser(user);
-                    navigate(
-                      user.role === "TEACHER"
-                        ? "/homeStudentPage"
-                        : "/homeTeacherPage"
-                    );
-                  } else {
-                    alert("Usuario no registrado");
-                  }
-                }}
+
               >
                 Iniciar sesión
               </button>
