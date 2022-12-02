@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Image, Box, Square, Button, IconButton } from "@chakra-ui/react";
 import { StarIcon, CheckIcon, CloseIcon } from "@chakra-ui/icons";
 import "./BoxClass.css";
-import { ClaseContext } from "../../contexts/ClasesContext";
+// import { ClaseContext } from "../../contexts/ClasesContext";
 import { useNavigate } from "react-router-dom";
 import { MdArrowForward, MdEdit } from "react-icons/md";
 
@@ -17,7 +17,7 @@ export default function Caja({
   cupos,
   inscriptos,
 }) {
-  const { clase } = useContext(ClaseContext);
+  // const { clase } = useContext(ClaseContext);
   const navigate = useNavigate();
   const redirect = () => {
     const path = "/comentarios/";

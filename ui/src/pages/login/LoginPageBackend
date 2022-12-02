@@ -24,7 +24,7 @@ import {login} from "../controller/miApp.controller";
 
 const useStyles = makeStyles(styles);
 
-export default function LoginPageBackend1(props) {
+export default function LoginPage2(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
   const [email,setEmail]=React.useState('');
   const[password,setPassword]=React.useState('');
@@ -81,7 +81,7 @@ export default function LoginPageBackend1(props) {
   const redirect= ()=>{
     if (usuarioValido) {
 
-      return <Redirect to='/Main' />
+      return <Redirect to='/contrataciones' />
     }
     
 

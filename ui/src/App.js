@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import LoginPageBackend1 from "./pages/login/LoginPageBackend";
+import LoginPage from "./pages/login/LoginPage";
+import LoginPage2 from "./pages/login/LoginPageBackend";
 import SignUp from "./pages/signin/SigninPage";
 import SigninRole from "./pages/signin/SigninRole";
 import SigninTeacher from "./pages/signin/SigninTeacher";
@@ -41,11 +42,11 @@ export default function App() {
                       Crear Clases
                     </Link>
                   </li>
-                  {/* <li className="nav-item">
+                  { <li className="nav-item">
                     <Link className="nav-link" to={"/contrataciones"}>
                       Contrataciones
                     </Link>
-                  </li> */}
+                  </li> }
                   <li className="nav-item">
                     <Link className="nav-link" to={"/sign-in"}>
                       Iniciar Sesion
@@ -69,7 +70,8 @@ export default function App() {
         <main>
           <Routes>
             <Route exact path="/" element={<Landing />} />
-            <Route path="/sign-in" element={<LoginPageBackend1 />} />
+            <Route path="/sign-in" element={<LoginPage/>} />
+            <Route path="/sign-in2" element={<LoginPage2/>} />
             <Route path="/olvidoContrasena" element={<OlvidoContrasena />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/sign-in-inicial" element={<SigninRole />} />

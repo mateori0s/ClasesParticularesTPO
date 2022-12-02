@@ -1,5 +1,5 @@
-import React, { Component, useState, setValue} from "react";
-import { Input, ChakraProvider, Textarea, Box, useToast, Button } from "@chakra-ui/react";
+import React, { useState} from "react";
+import {Box, useToast, Button } from "@chakra-ui/react";
 import "./CrearClase.css";
 
 export default function CrearClases() {

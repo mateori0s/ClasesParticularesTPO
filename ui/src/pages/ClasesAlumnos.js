@@ -1,7 +1,7 @@
 import mock from "../data/mock.json";
-import { Box, SimpleGrid, Button } from "@chakra-ui/react";
+import { Box, SimpleGrid} from "@chakra-ui/react";
 import CajaAlumno from "../components/box/BoxClassAlumn";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function ClasesAlumnos() {
   return (
