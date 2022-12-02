@@ -13,6 +13,7 @@ import CajaCrearClases from "./pages/CrearClase";
 import OlvidoContrasena from "./pages/olvidoContrasena/olvidoContrasena";
 import Landing from "./pages/landing/Landing";
 import Contrataciones from "./pages/Contrataciones/Contrataciones";
+import LoginPage2 from "./pages/login/LoginPage2";
 
 export default function App() {
   return (
@@ -69,7 +70,7 @@ export default function App() {
         <main>
           <Routes>
             <Route exact path="/" element={<Landing />} />
-            <Route path="/sign-in" element={<Login />} />
+            <Route path="/sign-in" element={<LoginPage2 />} />
             <Route path="/olvidoContrasena" element={<OlvidoContrasena />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/sign-in-inicial" element={<SigninRole />} />
