@@ -36,8 +36,5 @@ npm start
 Dejamos algunas credenciales de usuarios ya creados.
 
 Mail | Contraseña | Rol
-
-
--profesor@mail.com | profe123 | Profesor
-
--alumno@mail.com | alumno123 | Alumno
+profesor@mail.com | profe123 | Profesor
+alumno@mail.com | alumno123 | Alumno
